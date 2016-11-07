@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JBScrollingTabBarController_Example' do
+  pod 'JBScrollingTabBarController', :path => '../'
+
+  target 'JBScrollingTabBarController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
