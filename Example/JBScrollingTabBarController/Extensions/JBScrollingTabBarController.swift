@@ -11,7 +11,7 @@ import JBScrollingTabBarController
 extension JBScrollingTabBarController {
     
     //-----------------------------------------------------------------------------------------------------------
-    //MARK: Access projects JBScrollingTabBarController instance
+    //MARK: Access the project's JBScrollingTabBarController instance
     
     static func getTabBarController() -> JBScrollingTabBarController? {
         return (UIApplication.shared.delegate as? AppDelegate)?.tabBarController
