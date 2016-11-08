@@ -1,7 +1,6 @@
 
 # JBScrollingTabBarController
 
-[![CI Status](http://img.shields.io/travis/Jeff Breunig/JBScrollingTabBarController.svg?style=flat)](https://travis-ci.org/Jeff Breunig/JBScrollingTabBarController)
 [![Version](https://img.shields.io/cocoapods/v/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 [![License](https://img.shields.io/cocoapods/l/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
@@ -36,7 +35,8 @@ import JBScrollingTabBarController
 
 // Instantiate JBScrollingTabBarController.  All arguments for designated initializer are optional.
 
-let tabBarController = JBScrollingTabBarController(barTintColor: UIColor.white,
+let tabBarController = JBScrollingTabBarController(maxNumberOfButtonsOnScreen: 5,
+													   barTintColor: UIColor.white,
                                                        buttonActiveColor: UIColor.blue,
                                                        buttonInactiveColor: UIColor.lightGray,
                                                        buttonActiveFont: UIFont.boldSystemFont(ofSize: 12),
@@ -68,7 +68,7 @@ tabBarController.scrollingTabBarViewControllers = [
                                imageName: "Seven")
 ]
     
-private func setupNavController(rootViewController viewController: UIViewController, 
+func setupNavController(rootViewController viewController: UIViewController, 
 title: String, 
 imageName: String?) -> UINavigationController {
         let navController = UINavigationController(rootViewController: viewController)
@@ -94,17 +94,23 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ### JBScrollingTabBarController Public API                                              
 
 ```swift
+init(
+		maxNumberOfButtonsOnScreen: Int, // default 5
+        barTintColor: UIColor, // default UIColor(white: 0.9, alpha: 1.0)
+        buttonActiveColor: UIColor, // default UIColor.blue
+        buttonInactiveColor: UIColor, // default UIColor(white: 0.6, alpha: 1.0)
+        buttonActiveFont: UIFont, // default UIFont.boldSystemFont(ofSize: 12)
+        buttonInactiveFont: UIFont // default UIFont.systemFont(ofSize: 12)
+)
 var scrollingTabBarViewControllers: [UIViewController]?
-var maxNumberOfButtonsOnScreen: Int
-var initialButtonIndex: Int
-var shouldRotateButtons: Bool
-var rotateButtonDuration: Double
 var barTintColor: UIColor   
 var buttonActiveColor: UIColor  
 var buttonInactiveColor: UIColor
 var buttonActiveFont: UIFont   
 var buttonInactiveFont: UIFont 
-var index: Int
+var shouldRotateButtons: Bool // default true
+var rotateButtonDuration: Double // default 0.5
+var index: Int // default 0
 var selectedViewController: UIViewController?    
 ```
 

@@ -23,12 +23,10 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
             }
         }
     }
-    public var maxNumberOfButtonsOnScreen = 5
-    public var initialButtonIndex = 0
     public var shouldRotateButtons = true
-    public var rotateButtonDuration: Double = 0.5
+    public var rotateButtonDuration: Double = Defaults.rotateButtonDuration
     
-    public var barTintColor: UIColor = UIColor(white: 0.9, alpha: 1.0) {
+    public var barTintColor: UIColor = UIColor.TabBar.barTintColor {
         didSet {
             didUpdateBarTintColor()
         }
@@ -82,7 +80,13 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     //-----------------------------------------------------------------------------------------------------------
     //MARK: Private API
     
-    public private(set) var buttonSize: CGSize = CGSize(width: 25, height: 25)
+    struct Defaults {
+        static let rotateButtonDuration: Double = 0.5
+        static let buttonSize = CGSize(width: 25, height: 25)
+        static let maxNumberOfButtonsOnScreen = 5
+    }
+    
+    public private(set) var buttonSize: CGSize = Defaults.buttonSize
     
     // Users should use scrollingTabBarViewControllers property instead of viewControllers property.
     override public var viewControllers: [UIViewController]? {
@@ -103,42 +107,31 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
             return index
         }
     }
-    
+    private var maxNumberOfButtonsOnScreen = Defaults.maxNumberOfButtonsOnScreen
     private let scrollView = UIScrollView()
     private var tabBarButtons: [JBTabBarButton]?
+    //private var initialButtonIndex = 0
     private var didSetup = false
     
     //-----------------------------------------------------------------------------------------------------------
     //MARK: Designated initializer. All arguments are optional.
     
     public init(
-        barTintColor: UIColor? = nil,
-        buttonActiveColor: UIColor? = nil,
-        buttonInactiveColor: UIColor? = nil,
-        buttonActiveFont: UIFont? = nil,
-        buttonInactiveFont: UIFont? = nil) {
+        maxNumberOfButtonsOnScreen: Int = Defaults.maxNumberOfButtonsOnScreen,
+        barTintColor: UIColor = UIColor.TabBar.barTintColor,
+        buttonActiveColor: UIColor = UIColor.TabBar.activeItem,
+        buttonInactiveColor: UIColor = UIColor.TabBar.inactiveItem,
+        buttonActiveFont: UIFont = UIFont.TabBar.activeItem,
+        buttonInactiveFont: UIFont = UIFont.TabBar.inactiveItem) {
         
         super.init(nibName: nil, bundle: nil)
         delegate = self
-        if let barTintColor = barTintColor {
-            self.barTintColor = barTintColor
-        }
-        if let buttonActiveColor = buttonActiveColor {
-            self.buttonActiveColor = buttonActiveColor
-        }
-        if let buttonInactiveColor = buttonInactiveColor {
-            self.buttonInactiveColor = buttonInactiveColor
-        }
-        if let buttonActiveFont = buttonActiveFont {
-            self.buttonActiveFont = buttonActiveFont
-        }
-        if let buttonInactiveFont = buttonInactiveFont {
-            self.buttonInactiveFont = buttonInactiveFont
-        }
-    }
-    
-    init() {
-        super.init(nibName: nil, bundle: nil)
+        self.maxNumberOfButtonsOnScreen = maxNumberOfButtonsOnScreen
+        self.barTintColor = barTintColor
+        self.buttonActiveColor = buttonActiveColor
+        self.buttonInactiveColor = buttonInactiveColor
+        self.buttonActiveFont = buttonActiveFont
+        self.buttonInactiveFont = buttonInactiveFont
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -193,7 +186,7 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
                                          tag: i)
                 scrollView.addSubview(button)
                 buttons.append(button)
-                if i == initialButtonIndex {
+                if i == index {
                     initialButton = button
                 }
                 x += buttonWidth
