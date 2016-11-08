@@ -97,7 +97,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 var scrollingTabBarViewControllers: [UIViewController]?
 var maxNumberOfButtonsOnScreen: Int
 var initialButtonIndex: Int
-var shouldRotateButtons = true
+var shouldRotateButtons: Bool
 var rotateButtonDuration: Double
 var barTintColor: UIColor   
 var buttonActiveColor: UIColor  
