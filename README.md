@@ -95,12 +95,12 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ```swift
 init(
-		maxNumberOfButtonsOnScreen: Int, // default 5
-        barTintColor: UIColor, // default UIColor(white: 0.9, alpha: 1.0)
-        buttonActiveColor: UIColor, // default UIColor.blue
-        buttonInactiveColor: UIColor, // default UIColor(white: 0.6, alpha: 1.0)
-        buttonActiveFont: UIFont, // default UIFont.boldSystemFont(ofSize: 12)
-        buttonInactiveFont: UIFont // default UIFont.systemFont(ofSize: 12)
+	maxNumberOfButtonsOnScreen: Int, // default 5
+    barTintColor: UIColor, // default UIColor(white: 0.9, alpha: 1.0)
+    buttonActiveColor: UIColor, // default UIColor.blue
+    buttonInactiveColor: UIColor, // default UIColor(white: 0.6, alpha: 1.0)
+    buttonActiveFont: UIFont, // default UIFont.boldSystemFont(ofSize: 12)
+    buttonInactiveFont: UIFont // default UIFont.systemFont(ofSize: 12)
 )
 var scrollingTabBarViewControllers: [UIViewController]?
 var barTintColor: UIColor   
