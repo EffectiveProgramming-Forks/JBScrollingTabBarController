@@ -1,0 +1,16 @@
+PODS:
+  - JBScrollingTabBarController (0.1.0)
+
+DEPENDENCIES:
+  - JBScrollingTabBarController (from `../`)
+
+EXTERNAL SOURCES:
+  JBScrollingTabBarController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JBScrollingTabBarController: bc143c2cd63516ead045a495fba518c91cbed3b1
+
+PODFILE CHECKSUM: 1d643217ea045fa131dd66de20ae6a36cbfe6fb7
+
+COCOAPODS: 1.0.0

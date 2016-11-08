@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B99CF1A2D9A7F77C3BBD8DEED9768C8 /* Pods-JBScrollingTabBarController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB484C5D9A12EBE625E3ECD5DBD32CE /* Pods-JBScrollingTabBarController_Tests-dummy.m */; };
+		2C752E7B59E43D00584747199A27FDB8 /* Pods-JBScrollingTabBarController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2231F07D4EF3C6463705568CC08254C6 /* Pods-JBScrollingTabBarController_Example-dummy.m */; };
+		632EB04CCEC34D7A7BF9E40F835E86AD /* JBScrollingTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF928099059D69B773FE7ACFCA67F2A /* JBScrollingTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8510533FE2D7BC639A20FA3BC85C5D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A96414D41DD14EE600A25530 /* JBScrollingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96414D21DD14EE600A25530 /* JBScrollingTabBarController.swift */; };
+		A96414D51DD14EE600A25530 /* JBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96414D31DD14EE600A25530 /* JBTabBarButton.swift */; };
+		A96414D91DD14F5A00A25530 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96414D61DD14F5A00A25530 /* UIFont.swift */; };
+		A96414DA1DD14F5A00A25530 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96414D71DD14F5A00A25530 /* UIImageView.swift */; };
+		A96414DB1DD14F5A00A25530 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96414D81DD14F5A00A25530 /* UIView.swift */; };
+		A96414DF1DD151B700A25530 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96414DE1DD151B700A25530 /* UIColor.swift */; };
+		AA5B6BAAA595B0A57F99D38FA46E659D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C013C4201FB842C492CC4C1638E31D8C /* Pods-JBScrollingTabBarController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CA314A6FE13ADCCC70EFCAE2685A3D /* Pods-JBScrollingTabBarController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2746464C4BA6DAE83667EE3BCC826B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D7C6679C848BBBB38DA70E02DE835AEA /* JBScrollingTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C8889368FC82756DBD66F4AD7A7AB /* JBScrollingTabBarController-dummy.m */; };
+		F0E8F4ED0777ED91BA5CB8102EE27FED /* Pods-JBScrollingTabBarController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B939B39DA2253BDE026A661245391D3 /* Pods-JBScrollingTabBarController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C58681FC8655BFC72D78DFCA0781274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12AE281D86CB50FE259513C42BF66638;
+			remoteInfo = JBScrollingTabBarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FC01C7F8CF0731A3F70D3F63FD2BD92 /* Pods_JBScrollingTabBarController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBScrollingTabBarController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6386EA423C5BE0899D2C9A0FB8851E /* Pods-JBScrollingTabBarController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBScrollingTabBarController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2231F07D4EF3C6463705568CC08254C6 /* Pods-JBScrollingTabBarController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JBScrollingTabBarController_Example-dummy.m"; sourceTree = "<group>"; };
+		3B939B39DA2253BDE026A661245391D3 /* Pods-JBScrollingTabBarController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JBScrollingTabBarController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3EB484C5D9A12EBE625E3ECD5DBD32CE /* Pods-JBScrollingTabBarController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JBScrollingTabBarController_Tests-dummy.m"; sourceTree = "<group>"; };
+		467C8889368FC82756DBD66F4AD7A7AB /* JBScrollingTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JBScrollingTabBarController-dummy.m"; sourceTree = "<group>"; };
+		4EC727880283E6EC0953D9F40542F6CD /* Pods-JBScrollingTabBarController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBScrollingTabBarController_Example-resources.sh"; sourceTree = "<group>"; };
+		65F4DBE380CAD6B2AE48F9B9B7AD40E6 /* Pods-JBScrollingTabBarController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBScrollingTabBarController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F52CC8F4D13B9157B828477D53E92A8 /* JBScrollingTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JBScrollingTabBarController.modulemap; sourceTree = "<group>"; };
+		805B934BAC16B8F63A405F32CD9A2BC1 /* Pods-JBScrollingTabBarController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JBScrollingTabBarController_Example.modulemap"; sourceTree = "<group>"; };
+		88D753358FCD3B5609B5A9CC389DAED3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C556797F1C78EAEE57E45CB71E692F3 /* Pods-JBScrollingTabBarController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBScrollingTabBarController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		922D015677308FF9B90F38FCA8CAF573 /* Pods-JBScrollingTabBarController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBScrollingTabBarController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A04214FDB5B07E7C72256C767E72B5E2 /* Pods-JBScrollingTabBarController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JBScrollingTabBarController_Tests.modulemap"; sourceTree = "<group>"; };
+		A96414D21DD14EE600A25530 /* JBScrollingTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBScrollingTabBarController.swift; sourceTree = "<group>"; };
+		A96414D31DD14EE600A25530 /* JBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBTabBarButton.swift; sourceTree = "<group>"; };
+		A96414D61DD14F5A00A25530 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		A96414D71DD14F5A00A25530 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		A96414D81DD14F5A00A25530 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A96414DE1DD151B700A25530 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		AFFBDE014683ECA175539B764DCA7D24 /* Pods-JBScrollingTabBarController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBScrollingTabBarController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B35417BFDDF684200BF24F547FBDCF12 /* Pods-JBScrollingTabBarController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JBScrollingTabBarController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B442D8D048D1DBA98D7A121F8D4A09BF /* Pods-JBScrollingTabBarController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JBScrollingTabBarController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6CBB147236CD974865E3EBF62AD23EC /* Pods-JBScrollingTabBarController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JBScrollingTabBarController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BC9372C9E73EC0F515EE1DE86A36B575 /* JBScrollingTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JBScrollingTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4CA314A6FE13ADCCC70EFCAE2685A3D /* Pods-JBScrollingTabBarController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JBScrollingTabBarController_Example-umbrella.h"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DBA6FE9990EDFBE5DAED405C3335EE37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF928099059D69B773FE7ACFCA67F2A /* JBScrollingTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JBScrollingTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		DDBACCB06153009A4FC645F42E93EEA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1B5F81FAA23EF784D804D2DDEBC50D /* Pods-JBScrollingTabBarController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBScrollingTabBarController_Tests-resources.sh"; sourceTree = "<group>"; };
+		E53F421E9DB73EE9036CCD2C693FD669 /* JBScrollingTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JBScrollingTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		E6C72B3AFF85CC53D10EFC9530887E1B /* Pods_JBScrollingTabBarController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBScrollingTabBarController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7B9C5B7FAA9C498DEE80E8A7EB3365 /* Pods-JBScrollingTabBarController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JBScrollingTabBarController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2DF5638268F25DCAC2A461E8133AF28 /* Pods-JBScrollingTabBarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBScrollingTabBarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F3E83E41823FF35E8690FA70D3A9305E /* JBScrollingTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JBScrollingTabBarController.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AFDD5FB5C59409111606E49FF0E91EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2746464C4BA6DAE83667EE3BCC826B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732E79D705CD91EB9B84367910F0AE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5B6BAAA595B0A57F99D38FA46E659D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4657EF0B78601458CBB3A598E25DB72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8510533FE2D7BC639A20FA3BC85C5D38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B7B827A86AB9A2CEFFEA4076732D619 /* Pods-JBScrollingTabBarController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DBA6FE9990EDFBE5DAED405C3335EE37 /* Info.plist */,
+				805B934BAC16B8F63A405F32CD9A2BC1 /* Pods-JBScrollingTabBarController_Example.modulemap */,
+				B442D8D048D1DBA98D7A121F8D4A09BF /* Pods-JBScrollingTabBarController_Example-acknowledgements.markdown */,
+				B35417BFDDF684200BF24F547FBDCF12 /* Pods-JBScrollingTabBarController_Example-acknowledgements.plist */,
+				2231F07D4EF3C6463705568CC08254C6 /* Pods-JBScrollingTabBarController_Example-dummy.m */,
+				1A6386EA423C5BE0899D2C9A0FB8851E /* Pods-JBScrollingTabBarController_Example-frameworks.sh */,
+				4EC727880283E6EC0953D9F40542F6CD /* Pods-JBScrollingTabBarController_Example-resources.sh */,
+				C4CA314A6FE13ADCCC70EFCAE2685A3D /* Pods-JBScrollingTabBarController_Example-umbrella.h */,
+				F2DF5638268F25DCAC2A461E8133AF28 /* Pods-JBScrollingTabBarController_Example.debug.xcconfig */,
+				AFFBDE014683ECA175539B764DCA7D24 /* Pods-JBScrollingTabBarController_Example.release.xcconfig */,
+			);
+			name = "Pods-JBScrollingTabBarController_Example";
+			path = "Target Support Files/Pods-JBScrollingTabBarController_Example";
+			sourceTree = "<group>";
+		};
+		17E0B2D40DD30CBA5DD5AC338D6EC9C1 /* JBScrollingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F497DBFDE94F8FF1C8CFAD43E658019B /* JBScrollingTabBarController */,
+				5AF59A7EAFA8E0116386655EEE206048 /* Support Files */,
+			);
+			name = JBScrollingTabBarController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5AF59A7EAFA8E0116386655EEE206048 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88D753358FCD3B5609B5A9CC389DAED3 /* Info.plist */,
+				6F52CC8F4D13B9157B828477D53E92A8 /* JBScrollingTabBarController.modulemap */,
+				F3E83E41823FF35E8690FA70D3A9305E /* JBScrollingTabBarController.xcconfig */,
+				467C8889368FC82756DBD66F4AD7A7AB /* JBScrollingTabBarController-dummy.m */,
+				E53F421E9DB73EE9036CCD2C693FD669 /* JBScrollingTabBarController-prefix.pch */,
+				DCF928099059D69B773FE7ACFCA67F2A /* JBScrollingTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JBScrollingTabBarController";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8B8B68BA325309FB88A543165860F3D8 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DD58E834BD2DDCB8155EAE3C128ED594 /* Products */,
+				D91835467999C9865B6F4473E64C53EB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B8B68BA325309FB88A543165860F3D8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17E0B2D40DD30CBA5DD5AC338D6EC9C1 /* JBScrollingTabBarController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D91835467999C9865B6F4473E64C53EB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B7B827A86AB9A2CEFFEA4076732D619 /* Pods-JBScrollingTabBarController_Example */,
+				FF1B7671C419A9FDA0EBA0B80EC4DCDE /* Pods-JBScrollingTabBarController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DD58E834BD2DDCB8155EAE3C128ED594 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC9372C9E73EC0F515EE1DE86A36B575 /* JBScrollingTabBarController.framework */,
+				E6C72B3AFF85CC53D10EFC9530887E1B /* Pods_JBScrollingTabBarController_Example.framework */,
+				0FC01C7F8CF0731A3F70D3F63FD2BD92 /* Pods_JBScrollingTabBarController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F497DBFDE94F8FF1C8CFAD43E658019B /* JBScrollingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FE9A71525E70F2E744CB78B6B5F6EAA0 /* Classes */,
+			);
+			path = JBScrollingTabBarController;
+			sourceTree = "<group>";
+		};
+		FE9A71525E70F2E744CB78B6B5F6EAA0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A96414D21DD14EE600A25530 /* JBScrollingTabBarController.swift */,
+				A96414D31DD14EE600A25530 /* JBTabBarButton.swift */,
+				A96414D61DD14F5A00A25530 /* UIFont.swift */,
+				A96414D71DD14F5A00A25530 /* UIImageView.swift */,
+				A96414D81DD14F5A00A25530 /* UIView.swift */,
+				A96414DE1DD151B700A25530 /* UIColor.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FF1B7671C419A9FDA0EBA0B80EC4DCDE /* Pods-JBScrollingTabBarController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DDBACCB06153009A4FC645F42E93EEA4 /* Info.plist */,
+				A04214FDB5B07E7C72256C767E72B5E2 /* Pods-JBScrollingTabBarController_Tests.modulemap */,
+				EB7B9C5B7FAA9C498DEE80E8A7EB3365 /* Pods-JBScrollingTabBarController_Tests-acknowledgements.markdown */,
+				B6CBB147236CD974865E3EBF62AD23EC /* Pods-JBScrollingTabBarController_Tests-acknowledgements.plist */,
+				3EB484C5D9A12EBE625E3ECD5DBD32CE /* Pods-JBScrollingTabBarController_Tests-dummy.m */,
+				922D015677308FF9B90F38FCA8CAF573 /* Pods-JBScrollingTabBarController_Tests-frameworks.sh */,
+				DF1B5F81FAA23EF784D804D2DDEBC50D /* Pods-JBScrollingTabBarController_Tests-resources.sh */,
+				3B939B39DA2253BDE026A661245391D3 /* Pods-JBScrollingTabBarController_Tests-umbrella.h */,
+				65F4DBE380CAD6B2AE48F9B9B7AD40E6 /* Pods-JBScrollingTabBarController_Tests.debug.xcconfig */,
+				8C556797F1C78EAEE57E45CB71E692F3 /* Pods-JBScrollingTabBarController_Tests.release.xcconfig */,
+			);
+			name = "Pods-JBScrollingTabBarController_Tests";
+			path = "Target Support Files/Pods-JBScrollingTabBarController_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2DD1912412EBFD84A33A29DB503E6C3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C013C4201FB842C492CC4C1638E31D8C /* Pods-JBScrollingTabBarController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EF561C320B423769CC9C98F2524A10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632EB04CCEC34D7A7BF9E40F835E86AD /* JBScrollingTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB20A2945378F44110F3EF493AFF6C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E8F4ED0777ED91BA5CB8102EE27FED /* Pods-JBScrollingTabBarController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12AE281D86CB50FE259513C42BF66638 /* JBScrollingTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69C2B83551C0BD729A14B9F9B3354E3 /* Build configuration list for PBXNativeTarget "JBScrollingTabBarController" */;
+			buildPhases = (
+				E628505C90DF324DC4AD3D02BC9B420A /* Sources */,
+				6AFDD5FB5C59409111606E49FF0E91EC /* Frameworks */,
+				34EF561C320B423769CC9C98F2524A10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBScrollingTabBarController;
+			productName = JBScrollingTabBarController;
+			productReference = BC9372C9E73EC0F515EE1DE86A36B575 /* JBScrollingTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2537199A76545A97010EAC0098E35535 /* Pods-JBScrollingTabBarController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 390105A06653738DC40827C3C3298F4F /* Build configuration list for PBXNativeTarget "Pods-JBScrollingTabBarController_Tests" */;
+			buildPhases = (
+				39AE747C9EAE6A87357A73500E5109F4 /* Sources */,
+				A4657EF0B78601458CBB3A598E25DB72 /* Frameworks */,
+				7AB20A2945378F44110F3EF493AFF6C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JBScrollingTabBarController_Tests";
+			productName = "Pods-JBScrollingTabBarController_Tests";
+			productReference = 0FC01C7F8CF0731A3F70D3F63FD2BD92 /* Pods_JBScrollingTabBarController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA42872A152A134E2477AB974EDC2ECC /* Pods-JBScrollingTabBarController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBD115ECE7F2D9A64637C1E64DE9329A /* Build configuration list for PBXNativeTarget "Pods-JBScrollingTabBarController_Example" */;
+			buildPhases = (
+				5D38C6DB8FB400D26B6326077C110109 /* Sources */,
+				732E79D705CD91EB9B84367910F0AE78 /* Frameworks */,
+				2DD1912412EBFD84A33A29DB503E6C3A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1C97ED4A8801B2E607D927CE7C25010 /* PBXTargetDependency */,
+			);
+			name = "Pods-JBScrollingTabBarController_Example";
+			productName = "Pods-JBScrollingTabBarController_Example";
+			productReference = E6C72B3AFF85CC53D10EFC9530887E1B /* Pods_JBScrollingTabBarController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					12AE281D86CB50FE259513C42BF66638 = {
+						LastSwiftMigration = 0800;
+					};
+					AA42872A152A134E2477AB974EDC2ECC = {
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DD58E834BD2DDCB8155EAE3C128ED594 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12AE281D86CB50FE259513C42BF66638 /* JBScrollingTabBarController */,
+				AA42872A152A134E2477AB974EDC2ECC /* Pods-JBScrollingTabBarController_Example */,
+				2537199A76545A97010EAC0098E35535 /* Pods-JBScrollingTabBarController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39AE747C9EAE6A87357A73500E5109F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B99CF1A2D9A7F77C3BBD8DEED9768C8 /* Pods-JBScrollingTabBarController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D38C6DB8FB400D26B6326077C110109 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C752E7B59E43D00584747199A27FDB8 /* Pods-JBScrollingTabBarController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E628505C90DF324DC4AD3D02BC9B420A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96414D91DD14F5A00A25530 /* UIFont.swift in Sources */,
+				A96414DA1DD14F5A00A25530 /* UIImageView.swift in Sources */,
+				A96414D41DD14EE600A25530 /* JBScrollingTabBarController.swift in Sources */,
+				D7C6679C848BBBB38DA70E02DE835AEA /* JBScrollingTabBarController-dummy.m in Sources */,
+				A96414DF1DD151B700A25530 /* UIColor.swift in Sources */,
+				A96414DB1DD14F5A00A25530 /* UIView.swift in Sources */,
+				A96414D51DD14EE600A25530 /* JBTabBarButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1C97ED4A8801B2E607D927CE7C25010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JBScrollingTabBarController;
+			target = 12AE281D86CB50FE259513C42BF66638 /* JBScrollingTabBarController */;
+			targetProxy = 6C58681FC8655BFC72D78DFCA0781274 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		054EE64198DD17FB89BC893757B574A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFFBDE014683ECA175539B764DCA7D24 /* Pods-JBScrollingTabBarController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JBScrollingTabBarController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JBScrollingTabBarController_Example/Pods-JBScrollingTabBarController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JBScrollingTabBarController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EE2D805EE0C41CFF659FD700DBB6077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F4DBE380CAD6B2AE48F9B9B7AD40E6 /* Pods-JBScrollingTabBarController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JBScrollingTabBarController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JBScrollingTabBarController_Tests/Pods-JBScrollingTabBarController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JBScrollingTabBarController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		305D9C341AA1087B8F646BCDDC08D109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C556797F1C78EAEE57E45CB71E692F3 /* Pods-JBScrollingTabBarController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JBScrollingTabBarController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JBScrollingTabBarController_Tests/Pods-JBScrollingTabBarController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JBScrollingTabBarController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		396861484706EE634ED9739656A6DBC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E83E41823FF35E8690FA70D3A9305E /* JBScrollingTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JBScrollingTabBarController/JBScrollingTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JBScrollingTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JBScrollingTabBarController/JBScrollingTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JBScrollingTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6912F0860DC967739E4FCB0C822F7691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E83E41823FF35E8690FA70D3A9305E /* JBScrollingTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JBScrollingTabBarController/JBScrollingTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JBScrollingTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JBScrollingTabBarController/JBScrollingTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JBScrollingTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C007C1E001D342F24B9EFF4A1D6ED10E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DF5638268F25DCAC2A461E8133AF28 /* Pods-JBScrollingTabBarController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JBScrollingTabBarController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JBScrollingTabBarController_Example/Pods-JBScrollingTabBarController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JBScrollingTabBarController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		390105A06653738DC40827C3C3298F4F /* Build configuration list for PBXNativeTarget "Pods-JBScrollingTabBarController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE2D805EE0C41CFF659FD700DBB6077 /* Debug */,
+				305D9C341AA1087B8F646BCDDC08D109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69C2B83551C0BD729A14B9F9B3354E3 /* Build configuration list for PBXNativeTarget "JBScrollingTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6912F0860DC967739E4FCB0C822F7691 /* Debug */,
+				396861484706EE634ED9739656A6DBC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBD115ECE7F2D9A64637C1E64DE9329A /* Build configuration list for PBXNativeTarget "Pods-JBScrollingTabBarController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C007C1E001D342F24B9EFF4A1D6ED10E /* Debug */,
+				054EE64198DD17FB89BC893757B574A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
