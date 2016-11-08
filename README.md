@@ -1,18 +1,36 @@
 
+# JBScrollingTabBarController
+
 [![CI Status](http://img.shields.io/travis/Jeff Breunig/JBScrollingTabBarController.svg?style=flat)](https://travis-ci.org/Jeff Breunig/JBScrollingTabBarController)
 [![Version](https://img.shields.io/cocoapods/v/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 [![License](https://img.shields.io/cocoapods/l/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 
-# JBScrollingTabBarController
-![alt tag](http://gph.is/2fzvycm?tc=1)
+![](http://gph.is/2fzvycm?tc=1)
+![](http://i.giphy.com/1100I6bT8lHx9m.gif)
 
-JBScrollingTabBarController is a scrollable and customizable UITabBarController subclass that allows the user to display more than 5 TabBarItems without showing a More navigation interface.
+**JBScrollingTabBarController** is a scrollable and customizable UITabBarController subclass that allows the user to display more than 5 TabBarItems without showing a More navigation interface.
+
+## Requirements
+
+- iOS 9.0+
+- Swift 3.0
+- Xcode 8.0
+
+## Installation
+
+**JBScrollingTabBarController** is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "JBScrollingTabBarController"
+```
 
 ## Example
 
 To run the example project, clone the repo, and run the project from the Example directory.
 
+```swift
 ## Usage
 
 import JBScrollingTabBarController
@@ -73,20 +91,6 @@ var buttonActiveFont: UIFont
 var buttonInactiveFont: UIFont 
 var index: Int
 var selectedViewController: UIViewController?    
-
-## Requirements
-
-- iOS 9.0+
-- Swift 3.0
-- Xcode 8.0
-
-## Installation
-
-JBScrollingTabBarController is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "JBScrollingTabBarController"
 ```
 
 ## Author
