@@ -27,13 +27,27 @@ extension JBScrollingTabBarController {
     
     private func getControllers() -> [UINavigationController] {
         let controllers = [
-            setupNavController(rootViewController: FirstViewController(), title: "One", imageName: "One"),
-            setupNavController(rootViewController: SecondViewController(), title: "Two", imageName: "Two"),
-            setupNavController(rootViewController: ThirdViewController(), title: "Three", imageName: "Three"),
-            setupNavController(rootViewController: FourthViewController(), title: "Four", imageName: "Four"),
-            setupNavController(rootViewController: FifthViewController(), title: "Five", imageName: "Five"),
-            setupNavController(rootViewController: SixthViewController(), title: "Six", imageName: "Six"),
-            setupNavController(rootViewController: SeventhViewController(), title: "Seven", imageName: "Seven")
+            setupNavController(rootViewController: FirstViewController(),
+                               title: "One",
+                               imageName: "One"),
+            setupNavController(rootViewController: SecondViewController(),
+                               title: "Two",
+                               imageName: "Two"),
+            setupNavController(rootViewController: ThirdViewController(),
+                               title: "Three",
+                               imageName: "Three"),
+            setupNavController(rootViewController: FourthViewController(),
+                               title: "Four",
+                               imageName: "Four"),
+            setupNavController(rootViewController: FifthViewController(),
+                               title: "Five",
+                               imageName: "Five"),
+            setupNavController(rootViewController: SixthViewController(),
+                               title: "Six",
+                               imageName: "Six"),
+            setupNavController(rootViewController: SeventhViewController(),
+                               title: "Seven",
+                               imageName: "Seven")
         ]
         return controllers
     }

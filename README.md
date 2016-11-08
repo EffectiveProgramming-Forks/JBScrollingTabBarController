@@ -6,7 +6,6 @@
 [![License](https://img.shields.io/cocoapods/l/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 
-![](http://gph.is/2fzvycm?tc=1)
 ![](http://i.giphy.com/1100I6bT8lHx9m.gif)
 
 **JBScrollingTabBarController** is a scrollable and customizable UITabBarController subclass that allows the user to display more than 5 TabBarItems without showing a More navigation interface.
@@ -30,9 +29,9 @@ pod "JBScrollingTabBarController"
 
 To run the example project, clone the repo, and run the project from the Example directory.
 
-```swift
 ## Usage
 
+```swift
 import JBScrollingTabBarController
 
 // Instantiate JBScrollingTabBarController
@@ -46,13 +45,27 @@ let tabBarController = JBScrollingTabBarController(barTintColor: UIColor.white,
 // Assign controllers to JBScrollingTabBarController instance
 
 tabBarController.scrollingTabBarViewControllers = [
-            setupNavController(rootViewController: FirstViewController(), title: "One", imageName: "One"),
-            setupNavController(rootViewController: SecondViewController(), title: "Two", imageName: "Two"),
-            setupNavController(rootViewController: ThirdViewController(), title: "Three", imageName: "Three"),
-            setupNavController(rootViewController: FourthViewController(), title: "Four", imageName: "Four"),
-            setupNavController(rootViewController: FifthViewController(), title: "Five", imageName: "Five"),
-            setupNavController(rootViewController: SixthViewController(), title: "Six", imageName: "Six"),
-            setupNavController(rootViewController: SeventhViewController(), title: "Seven", imageName: "Seven")
+            setupNavController(rootViewController: FirstViewController(),
+                               title: "One",
+                               imageName: "One"),
+            setupNavController(rootViewController: SecondViewController(),
+                               title: "Two",
+                               imageName: "Two"),
+            setupNavController(rootViewController: ThirdViewController(),
+                               title: "Three",
+                               imageName: "Three"),
+            setupNavController(rootViewController: FourthViewController(),
+                               title: "Four",
+                               imageName: "Four"),
+            setupNavController(rootViewController: FifthViewController(),
+                               title: "Five",
+                               imageName: "Five"),
+            setupNavController(rootViewController: SixthViewController(),
+                               title: "Six",
+                               imageName: "Six"),
+            setupNavController(rootViewController: SeventhViewController(),
+                               title: "Seven",
+                               imageName: "Seven")
 ]
     
 private func setupNavController(rootViewController viewController: UIViewController, 
@@ -77,7 +90,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         return true
     }
 
-### JBScrollingTabBarController public API                                               
+**JBScrollingTabBarController public API**                                               
 
 var scrollingTabBarViewControllers: [UIViewController]?
 var maxNumberOfButtonsOnScreen: Int
