@@ -34,7 +34,7 @@ To run the example project, clone the repo, and run the project from the Example
 ```swift
 import JBScrollingTabBarController
 
-// Instantiate JBScrollingTabBarController
+// Instantiate JBScrollingTabBarController.  All arguments for designated initializer are optional.
 
 let tabBarController = JBScrollingTabBarController(barTintColor: UIColor.white,
                                                        buttonActiveColor: UIColor.blue,
@@ -42,7 +42,7 @@ let tabBarController = JBScrollingTabBarController(barTintColor: UIColor.white,
                                                        buttonActiveFont: UIFont.boldSystemFont(ofSize: 12),
                                                        buttonInactiveFont: UIFont.systemFont(ofSize: 12))
 
-// Assign controllers to JBScrollingTabBarController instance
+// Assign controllers to JBScrollingTabBarController instance.
 
 tabBarController.scrollingTabBarViewControllers = [
             setupNavController(rootViewController: FirstViewController(),
@@ -77,11 +77,11 @@ imageName: String?) -> UINavigationController {
         return navController
 }  
 
-// Set initial selected button index
+// Set initial selected button index.
 
 tabBarController.index = 0 
 
-// Assign JBScrollingTabBarController instance as the window's rootViewController in application:didFinishLaunchingWithOptions
+// Assign JBScrollingTabBarController instance as the window's rootViewController in UIApplicationDelegate.application:didFinishLaunchingWithOptions
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         tabBarController.setupTabBarController()
@@ -89,9 +89,11 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         window?.makeKeyAndVisible()
         return true
     }
+```
 
-**JBScrollingTabBarController public API**                                               
+### JBScrollingTabBarController Public API                                              
 
+```swift
 var scrollingTabBarViewControllers: [UIViewController]?
 var maxNumberOfButtonsOnScreen: Int
 var initialButtonIndex: Int
