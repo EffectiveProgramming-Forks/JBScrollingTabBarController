@@ -25,7 +25,7 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     }
     public var maxNumberOfButtonsOnScreen = 5
     public var initialButtonIndex = 0
-    public var shouldRotateButton = true
+    public var shouldRotateButtons = true
     public var rotateButtonDuration: Double = 0.5
     
     public var barTintColor: UIColor = UIColor(white: 0.9, alpha: 1.0) {
@@ -78,11 +78,11 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
             }
         }
     }
-    
-    public private(set) var buttonSize: CGSize = CGSize(width: 25, height: 25)
 
     //-----------------------------------------------------------------------------------------------------------
     //MARK: Private API
+    
+    public private(set) var buttonSize: CGSize = CGSize(width: 25, height: 25)
     
     // Users should use scrollingTabBarViewControllers property instead of viewControllers property.
     override public var viewControllers: [UIViewController]? {
@@ -261,7 +261,7 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     }
     
     private func rotate(selectedButton button: JBTabBarButton) {
-        if shouldRotateButton {
+        if shouldRotateButtons {
             UIView.animate(withDuration: rotateButtonDuration,
                            delay: 0.0,
                            options: UIViewAnimationOptions.curveEaseIn,

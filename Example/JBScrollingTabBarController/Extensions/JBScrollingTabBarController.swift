@@ -38,7 +38,9 @@ extension JBScrollingTabBarController {
         return controllers
     }
     
-    private func setupNavController(rootViewController viewController: UIViewController, title: String, imageName: String?) -> UINavigationController {
+    private func setupNavController(rootViewController viewController: UIViewController,
+                                    title: String,
+                                    imageName: String?) -> UINavigationController {
         let navController = UINavigationController(rootViewController: viewController)
         let image = imageName != nil ? UIImage(named: imageName!) : nil
         navController.tabBarItem = UITabBarItem(title: title, image: image, selectedImage: nil)
