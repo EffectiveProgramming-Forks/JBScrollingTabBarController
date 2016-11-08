@@ -7,8 +7,10 @@
 #
 
 Pod::Spec.new do |s|
+  s.platform = :ios
+  s.ios.deployment_target = "9"
   s.name             = 'JBScrollingTabBarController'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'JBScrollingTabBarController is a Swift framework that allows the user to customize a scrollable UITabBarController.'
   s.description      = 'JBScrollingTabBarController is a Swift framework that allows the user to customize a scrollable UITabBarController that allows the user to display more than 5 tabs without showing the More navigation interface.'
   s.homepage         = 'https://github.com/jkbreunig/JBScrollingTabBarController'
@@ -19,7 +21,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'JBScrollingTabBarController/Classes/**/*'
+  s.source_files = 'JBScrollingTabBarController', 'JBScrollingTabBarController/**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'JBScrollingTabBarController' => ['JBScrollingTabBarController/Assets/*.png']

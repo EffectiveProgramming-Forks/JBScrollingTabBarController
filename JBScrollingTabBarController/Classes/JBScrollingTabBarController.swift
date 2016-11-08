@@ -16,7 +16,8 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     
     public var scrollingTabBarViewControllers: [UIViewController]? {
         didSet {
-            if scrollingTabBarViewControllers?.isEmpty == false, let vc = scrollingTabBarViewControllers?[0] {
+            if scrollingTabBarViewControllers?.isEmpty == false,
+                let vc = scrollingTabBarViewControllers?[0] {
                 self.viewControllers = [vc]
                 setup()
             }
@@ -59,7 +60,8 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     
     public var index: Int = 0 {
         didSet {
-            if let controllerCount = scrollingTabBarViewControllers?.count, index >= controllerCount {
+            if let controllerCount = scrollingTabBarViewControllers?.count,
+                index >= controllerCount {
                 index = oldValue
             } else {
                 didUpdateSelectedIndex()
@@ -69,7 +71,9 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     
     override public var selectedViewController: UIViewController? {
         willSet {
-            if let controllerCount = scrollingTabBarViewControllers?.count, controllerCount > index, let viewController = scrollingTabBarViewControllers?[index] {
+            if let controllerCount = scrollingTabBarViewControllers?.count,
+                controllerCount > index,
+                let viewController = scrollingTabBarViewControllers?[index] {
                 self.viewControllers = [viewController]
             }
         }
@@ -171,7 +175,12 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
         let numberOfButtons = scrollingTabBarViewControllers?.count ?? 0
         let buttonHeight = tabBar.frame.height
         let scrollViewWidth = scrollView.frame.width
-        let buttonWidth: CGFloat = numberOfButtons > maxNumberOfButtonsOnScreen ? scrollViewWidth / CGFloat(maxNumberOfButtonsOnScreen) : scrollViewWidth / CGFloat(numberOfButtons)
+        let buttonWidth: CGFloat
+        if numberOfButtons > maxNumberOfButtonsOnScreen {
+            buttonWidth = scrollViewWidth / CGFloat(maxNumberOfButtonsOnScreen)
+        } else {
+            buttonWidth = scrollViewWidth / CGFloat(numberOfButtons)
+        }
         var initialButton: JBTabBarButton?
         var buttons = [JBTabBarButton]()
         var x: CGFloat = 0
@@ -199,7 +208,10 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
         }
     }
     
-    private func setupButton(xOffset: CGFloat, buttonSize: CGSize, item: UITabBarItem, tag: Int) -> JBTabBarButton {
+    private func setupButton(xOffset: CGFloat,
+                             buttonSize: CGSize,
+                             item: UITabBarItem,
+                             tag: Int) -> JBTabBarButton {
         let button = JBTabBarButton(image: item.selectedImage,
                                     activeColor: buttonActiveColor,
                                     inactiveColor: buttonInactiveColor,
@@ -216,7 +228,8 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     //-----------------------------------------------------------------------------------------------------------
     //MARK: UITabBarControllerDelegate
     
-    public func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+    public func tabBarController(_ tabBarController: UITabBarController,
+                                 didSelect viewController: UIViewController) {
         didUpdateSelectedIndex()
     }
     
@@ -249,7 +262,10 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     
     private func rotate(selectedButton button: JBTabBarButton) {
         if shouldRotateButton {
-            UIView.animate(withDuration: rotateButtonDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+            UIView.animate(withDuration: rotateButtonDuration,
+                           delay: 0.0,
+                           options: UIViewAnimationOptions.curveEaseIn,
+                           animations: { () -> Void in
                 button.iv.rotateView()
                 }, completion: nil)
         }

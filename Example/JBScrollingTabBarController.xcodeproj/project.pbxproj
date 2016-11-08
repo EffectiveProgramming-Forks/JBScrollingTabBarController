@@ -199,12 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JBScrollingTabBarController_Example" */;
 			buildPhases = (
-				525C7597A5803DED11A54F44 /* 📦 Check Pods Manifest.lock */,
+				525C7597A5803DED11A54F44 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				976094747A5855CC567C07C2 /* 📦 Embed Pods Frameworks */,
-				B860EEA399E0B8B529BD0C73 /* 📦 Copy Pods Resources */,
+				976094747A5855CC567C07C2 /* [CP] Embed Pods Frameworks */,
+				B860EEA399E0B8B529BD0C73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,12 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JBScrollingTabBarController_Tests" */;
 			buildPhases = (
-				49BEDB5CDAD3F67E47988E23 /* 📦 Check Pods Manifest.lock */,
+				49BEDB5CDAD3F67E47988E23 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				9F8876C4820EEC14B10B8E89 /* 📦 Embed Pods Frameworks */,
-				0B65DA6E5AF3F68CD53D1F0D /* 📦 Copy Pods Resources */,
+				9F8876C4820EEC14B10B8E89 /* [CP] Embed Pods Frameworks */,
+				0B65DA6E5AF3F68CD53D1F0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,14 +298,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B65DA6E5AF3F68CD53D1F0D /* 📦 Copy Pods Resources */ = {
+		0B65DA6E5AF3F68CD53D1F0D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,44 +313,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JBScrollingTabBarController_Tests/Pods-JBScrollingTabBarController_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		49BEDB5CDAD3F67E47988E23 /* 📦 Check Pods Manifest.lock */ = {
+		49BEDB5CDAD3F67E47988E23 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		525C7597A5803DED11A54F44 /* 📦 Check Pods Manifest.lock */ = {
+		525C7597A5803DED11A54F44 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		976094747A5855CC567C07C2 /* 📦 Embed Pods Frameworks */ = {
+		976094747A5855CC567C07C2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,14 +358,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JBScrollingTabBarController_Example/Pods-JBScrollingTabBarController_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9F8876C4820EEC14B10B8E89 /* 📦 Embed Pods Frameworks */ = {
+		9F8876C4820EEC14B10B8E89 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,14 +373,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JBScrollingTabBarController_Tests/Pods-JBScrollingTabBarController_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B860EEA399E0B8B529BD0C73 /* 📦 Copy Pods Resources */ = {
+		B860EEA399E0B8B529BD0C73 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
