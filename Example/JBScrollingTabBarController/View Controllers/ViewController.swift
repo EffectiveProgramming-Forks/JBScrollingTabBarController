@@ -1,25 +1,30 @@
 //
-//  JBRootViewController.swift
-//  JBTabBarController
+//  ViewController.swift
+//  JBScrollingTabBarController
 //
-//  Created by Jeff Breunig on 11/6/16.
-//  Copyright © 2016 Jeff Breunig. All rights reserved.
+//  Created by Jeff Breunig on 11/9/16.
+//  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
 import UIKit
 import JBScrollingTabBarController
 
-class RootViewController: UIViewController {
-    var backgroundTitle: String?
-    var color: UIColor = UIColor.red
+class ViewController: UIViewController {
+    private var backgroundTitle: String?
+    private var color: UIColor = UIColor.red
     private let label = UILabel()
     
-    init() {
+    //-----------------------------------------------------------------------------------------------------------
+    //MARK: Designated initializer
+    
+    init(backgroundTitle: String, color: UIColor) {
         super.init(nibName: nil, bundle: nil)
+        self.backgroundTitle = backgroundTitle
+        self.color = color
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     //-----------------------------------------------------------------------------------------------------------
