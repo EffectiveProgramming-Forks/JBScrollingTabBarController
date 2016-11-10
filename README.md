@@ -47,13 +47,34 @@ let tabBarController = JBScrollingTabBarController(maxNumberOfButtonsOnScreen: 5
 var controllers = [UINavigationController]()
 
 let tabObjects: [TabObject] = [
-    TabObject(color: UIColor.red, tabTitle: "One", viewTitle: "1", imageName: "One"),
-    TabObject(color: UIColor.orange, tabTitle: "Two", viewTitle: "2", imageName: "Two"),
-    TabObject(color: UIColor.yellow, tabTitle: "Three", viewTitle: "3", imageName: "Three"),
-    TabObject(color: UIColor.green, tabTitle: "Four", viewTitle: "4", imageName: "Four"),
-    TabObject(color: UIColor.blue, tabTitle: "Five", viewTitle: "5", imageName: "Five"),
-    TabObject(color: UIColor.magenta, tabTitle: "Six", viewTitle: "6", imageName: "Six"),
-    TabObject(color: UIColor.purple, tabTitle: "Seven", viewTitle: "7", imageName: "Seven")                    
+    TabObject(color: UIColor.red, 
+    	tabTitle: "One", 
+    	viewTitle: "1", 
+    	imageName: "One"),
+    TabObject(color: UIColor.orange, 
+    	tabTitle: "Two", 
+    	viewTitle: "2", 
+    	imageName: "Two"),
+    TabObject(color: UIColor.yellow, 
+    	tabTitle: "Three", 
+    	viewTitle: "3", 
+    	imageName: "Three"),
+    TabObject(color: UIColor.green, 
+    	tabTitle: "Four", 
+    	viewTitle: "4", 
+    	imageName: "Four"),
+    TabObject(color: UIColor.blue, 
+    	tabTitle: "Five", 
+    	viewTitle: "5", 
+    	imageName: "Five"),
+    TabObject(color: UIColor.magenta, 
+    	tabTitle: "Six", 
+    	viewTitle: "6", 
+    	imageName: "Six"),
+    TabObject(color: UIColor.purple, 
+    	tabTitle: "Seven", 
+    	viewTitle: "7", 
+    	imageName: "Seven")                    
 ]
 
 for tabObject in tabObjects {
@@ -68,7 +89,9 @@ func setupNavController(tabObject: TabObject) -> UINavigationController {
 	let viewController = ViewController(backgroundTitle: tabObject.viewTitle, color: tabObject.color)
     let navController = UINavigationController(rootViewController: viewController)
     let image = UIImage(named: tabObject.imageName)
-    navController.tabBarItem = UITabBarItem(title: tabObject.tabTitle, image: image, selectedImage: nil)
+    navController.tabBarItem = UITabBarItem(title: tabObject.tabTitle, 
+    	image: image, 
+    	selectedImage: nil)
     return navController
 }  
 
