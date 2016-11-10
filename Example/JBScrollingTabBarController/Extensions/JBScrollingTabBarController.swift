@@ -33,8 +33,7 @@ extension JBScrollingTabBarController {
             TabObject(color: UIColor.green, tabTitle: "Four", viewTitle: "4", imageName: "Four"),
             TabObject(color: UIColor.blue, tabTitle: "Five", viewTitle: "5", imageName: "Five"),
             TabObject(color: UIColor.magenta, tabTitle: "Six", viewTitle: "6", imageName: "Six"),
-            TabObject(color: UIColor.purple, tabTitle: "Seven", viewTitle: "7", imageName: "Seven"),
-                      
+            TabObject(color: UIColor.purple, tabTitle: "Seven", viewTitle: "7", imageName: "Seven")
         ]
         for tabObject in tabObjects {
             let navigationController = setupNavController(tabObject: tabObject)
