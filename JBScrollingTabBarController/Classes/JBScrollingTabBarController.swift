@@ -56,6 +56,12 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
         }
     }
     
+    public var bounces: Bool = true {
+        didSet {
+            scrollView.bounces = bounces
+        }
+    }
+    
     public var index: Int = 0 {
         didSet {
             if let controllerCount = scrollingTabBarViewControllers?.count,
@@ -159,7 +165,7 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
         scrollView.frame = CGRect(x: 0, y: 0, width: tabBar.frame.width, height: tabBar.frame.height)
         scrollView.backgroundColor = barTintColor
         scrollView.showsHorizontalScrollIndicator = false
-        scrollView.bounces = true
+        scrollView.bounces = bounces
         scrollView.isPagingEnabled = false
         tabBar.addSubview(scrollView)
     }
