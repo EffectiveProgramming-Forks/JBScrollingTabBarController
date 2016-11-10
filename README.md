@@ -44,37 +44,32 @@ let tabBarController = JBScrollingTabBarController(maxNumberOfButtonsOnScreen: 5
 
 // Assign controllers to JBScrollingTabBarController instance.
 
-tabBarController.scrollingTabBarViewControllers = [
-            setupNavController(rootViewController: FirstViewController(),
-                               title: "One",
-                               imageName: "One"),
-            setupNavController(rootViewController: SecondViewController(),
-                               title: "Two",
-                               imageName: "Two"),
-            setupNavController(rootViewController: ThirdViewController(),
-                               title: "Three",
-                               imageName: "Three"),
-            setupNavController(rootViewController: FourthViewController(),
-                               title: "Four",
-                               imageName: "Four"),
-            setupNavController(rootViewController: FifthViewController(),
-                               title: "Five",
-                               imageName: "Five"),
-            setupNavController(rootViewController: SixthViewController(),
-                               title: "Six",
-                               imageName: "Six"),
-            setupNavController(rootViewController: SeventhViewController(),
-                               title: "Seven",
-                               imageName: "Seven")
+var controllers = [UINavigationController]()
+
+let tabObjects: [TabObject] = [
+    TabObject(color: UIColor.red, tabTitle: "One", viewTitle: "1", imageName: "One"),
+    TabObject(color: UIColor.orange, tabTitle: "Two", viewTitle: "2", imageName: "Two"),
+    TabObject(color: UIColor.yellow, tabTitle: "Three", viewTitle: "3", imageName: "Three"),
+    TabObject(color: UIColor.green, tabTitle: "Four", viewTitle: "4", imageName: "Four"),
+    TabObject(color: UIColor.blue, tabTitle: "Five", viewTitle: "5", imageName: "Five"),
+    TabObject(color: UIColor.magenta, tabTitle: "Six", viewTitle: "6", imageName: "Six"),
+    TabObject(color: UIColor.purple, tabTitle: "Seven", viewTitle: "7", imageName: "Seven")                    
 ]
+
+for tabObject in tabObjects {
+    let navigationController = setupNavController(tabObject: tabObject)
+    controllers.append(navigationController)
+}
+
+tabBarController.scrollingTabBarViewControllers = controllers
+
     
-func setupNavController(rootViewController viewController: UIViewController, 
-title: String, 
-imageName: String?) -> UINavigationController {
-        let navController = UINavigationController(rootViewController: viewController)
-        let image = imageName != nil ? UIImage(named: imageName!) : nil
-        navController.tabBarItem = UITabBarItem(title: title, image: image, selectedImage: nil)
-        return navController
+func setupNavController(tabObject: TabObject) -> UINavigationController {
+	let viewController = ViewController(backgroundTitle: tabObject.viewTitle, color: tabObject.color)
+    let navController = UINavigationController(rootViewController: viewController)
+    let image = UIImage(named: tabObject.imageName)
+    navController.tabBarItem = UITabBarItem(title: tabObject.tabTitle, image: image, selectedImage: nil)
+    return navController
 }  
 
 // Set initial selected button index.
@@ -84,11 +79,11 @@ tabBarController.index = 0
 // Assign JBScrollingTabBarController instance as the window's rootViewController in UIApplicationDelegate.application:didFinishLaunchingWithOptions
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        tabBarController.setupTabBarController()
-        window?.rootViewController = tabBarController
-        window?.makeKeyAndVisible()
-        return true
-    }
+    tabBarController.setupTabBarController()
+    window?.rootViewController = tabBarController
+    window?.makeKeyAndVisible()
+    return true
+}
 ```
 
 ### JBScrollingTabBarController Public API                                              
@@ -111,6 +106,7 @@ var buttonInactiveFont: UIFont
 var shouldRotateButtons: Bool // default true
 var rotateButtonDuration: Double // default 0.5
 var index: Int // default 0
+var bounces: Bool // default true
 var selectedViewController: UIViewController?    
 ```
 
