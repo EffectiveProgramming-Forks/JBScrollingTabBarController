@@ -105,11 +105,12 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     
     struct Defaults {
         static let rotateButtonDuration: Double = 0.5
-        static let buttonSize = CGSize(width: 25, height: 25)
-        static let maxNumberOfButtonsOnScreen = 5
+        static let imageSize = CGSize(width: 25, height: 25)
+        static let minTabWidth: CGFloat = 50
+        static let maxNumberOfButtonsOnScreen = Int(UIScreen.main.bounds.width / Defaults.minTabWidth)
     }
     
-    public private(set) var buttonSize: CGSize = Defaults.buttonSize
+    public private(set) var imageSize: CGSize = Defaults.imageSize
     
     // Users should use scrollingTabBarViewControllers property instead of viewControllers property.
     override public var viewControllers: [UIViewController]? {
@@ -133,8 +134,6 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     private var maxNumberOfButtonsOnScreen = Defaults.maxNumberOfButtonsOnScreen
     private let scrollView = UIScrollView()
     private var tabBarButtons: [JBTabBarButton]?
-    //private var initialButtonIndex = 0
-    private var didSetup = false
     
     //-----------------------------------------------------------------------------------------------------------
     //MARK: Designated initializer. All arguments are optional.
@@ -169,16 +168,13 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     //MARK: Setup
     
     private func setup() {
-        if didSetup {
-            return
-        }
-        didSetup = true
         tabBar.barTintColor = barTintColor
         setupScrollView()
         setupTabBarButtons()
     }
     
     private func setupScrollView() {
+        // Set scrollView frame. Cannot modify constraints for UITabBar managed by a controller.
         scrollView.frame = CGRect(x: 0, y: 0, width: tabBar.frame.width, height: tabBar.frame.height)
         scrollView.backgroundColor = barTintColor
         scrollView.showsHorizontalScrollIndicator = false
@@ -219,7 +215,7 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
         scrollView.contentSize = CGSize(width: x, height: buttonHeight)
         if let initialButton = initialButton {
             didTapButton(initialButton)
-        } else if let tabBarButtons = tabBarButtons  , !tabBarButtons.isEmpty {
+        } else if let tabBarButtons = tabBarButtons, !tabBarButtons.isEmpty {
             didTapButton(tabBarButtons[0])
         }
     }
@@ -272,8 +268,13 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
     }
     
     private func updateActiveState(selectedButton: JBTabBarButton) {
-        tabBarButtons?.forEach({ $0.isActive = false })
-        selectedButton.isActive = true
+        tabBarButtons?.forEach { button in
+            if button !== selectedButton {
+                button.isActive = false
+            } else {
+                button.isActive = true
+            }
+        }
     }
     
     private func rotate(selectedButton button: JBTabBarButton) {
@@ -302,9 +303,9 @@ public class JBScrollingTabBarController: UITabBarController, UITabBarController
             let diff = superviewCenter.x - pointInSuperview.x
             centerXOffset = scrollView.contentOffset.x - diff
         }
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.3) {
             self.scrollView.contentOffset = CGPoint(x: centerXOffset, y: self.scrollView.contentOffset.y)
-        })
+        }
     }
     
     //-----------------------------------------------------------------------------------------------------------

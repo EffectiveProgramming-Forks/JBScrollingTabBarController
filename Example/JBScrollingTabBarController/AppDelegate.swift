@@ -31,7 +31,7 @@ import JBScrollingTabBarController
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let tabBarController = JBScrollingTabBarController()
+    let tabBarController = JBScrollingTabBarController(maxNumberOfButtonsOnScreen: 5)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         tabBarController.setupTabBarController()

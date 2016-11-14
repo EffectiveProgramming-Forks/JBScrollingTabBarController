@@ -133,7 +133,6 @@ class JBTabBarButton: UIButton {
     //MARK: Constraints
 
     private func setupConstraints() {
-        let padding: CGFloat = 0
         contentVerticalAlignment = UIControlContentVerticalAlignment.bottom
         iv.centerHorizontallyInSuperview()
         iv.alignWithSuperviewTop(constant: 5)
