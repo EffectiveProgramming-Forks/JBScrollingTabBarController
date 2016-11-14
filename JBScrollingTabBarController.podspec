@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = "9"
   s.name             = 'JBScrollingTabBarController'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'JBScrollingTabBarController is a Swift framework that allows the user to customize a scrollable UITabBarController.'
   s.description      = 'JBScrollingTabBarController is a Swift framework that allows the user to customize a scrollable UITabBarController that allows the user to display more than 5 tabs without showing the More navigation interface.'
   s.homepage         = 'https://github.com/jkbreunig/JBScrollingTabBarController'
