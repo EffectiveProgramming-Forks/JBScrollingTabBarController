@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     private var backgroundTitle: String?
     private var color: UIColor = UIColor.red
     private let label = UILabel()
+    private let labelFontSize: CGFloat = 50
     
     //-----------------------------------------------------------------------------------------------------------
     //MARK: Designated initializer
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
     private func addLabel() {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 50)
+        label.font = UIFont.systemFont(ofSize: labelFontSize)
         label.text = backgroundTitle
         view.addSubview(label)
     }

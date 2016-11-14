@@ -43,35 +43,16 @@ struct TabObject {
     }
     
     static func getTabObjects() -> [TabObject] {
-        return [
-            TabObject(color: UIColor.red,
-                      tabTitle: "One",
-                      viewTitle: "1",
-                      imageName: "One"),
-            TabObject(color: UIColor.orange,
-                      tabTitle: "Two",
-                      viewTitle: "2",
-                      imageName: "Two"),
-            TabObject(color: UIColor.yellow,
-                      tabTitle: "Three",
-                      viewTitle: "3",
-                      imageName: "Three"),
-            TabObject(color: UIColor.green,
-                      tabTitle: "Four",
-                      viewTitle: "4",
-                      imageName: "Four"),
-            TabObject(color: UIColor.blue,
-                      tabTitle: "Five",
-                      viewTitle: "5",
-                      imageName: "Five"),
-            TabObject(color: UIColor.magenta,
-                      tabTitle: "Six",
-                      viewTitle: "6",
-                      imageName: "Six"),
-            TabObject(color: UIColor.purple,
-                      tabTitle: "Seven",
-                      viewTitle: "7",
-                      imageName: "Seven")
-        ]
+        var tabObjects = [TabObject]()
+        let imageNames = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"]
+        let colors: [UIColor] = [.red, .orange, .yellow, .green, .blue, .magenta, .purple]
+        for (index, imageName) in imageNames.enumerated() {
+            let tabObject = TabObject(color: colors[index],
+                                      tabTitle: imageName,
+                                      viewTitle: "\(index)",
+                imageName: imageName)
+            tabObjects.append(tabObject)
+        }
+        return tabObjects
     }
 }
