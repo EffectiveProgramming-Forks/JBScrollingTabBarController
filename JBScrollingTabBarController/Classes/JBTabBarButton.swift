@@ -131,30 +131,14 @@ class JBTabBarButton: UIButton {
     
     //-----------------------------------------------------------------------------------------------------------
     //MARK: Constraints
-    
+
     private func setupConstraints() {
-        contentVerticalAlignment = UIControlContentVerticalAlignment.bottom
         let padding: CGFloat = 0
-        addConstraint(NSLayoutConstraint(item: iv, attribute: .centerX,
-                                         relatedBy: .equal,
-                                         toItem: self,
-                                         attribute: .centerX,
-                                         multiplier: 1.0,
-                                         constant: padding))
-        addConstraint(NSLayoutConstraint(item: iv,
-                                         attribute: .top,
-                                         relatedBy: .equal,
-                                         toItem: self,
-                                         attribute: .top,
-                                         multiplier: 1.0,
-                                         constant: 5))
-        addConstraint(NSLayoutConstraint(item: iv,
-                                         attribute: .height,
-                                         relatedBy: .equal,
-                                         toItem: nil,
-                                         attribute: .height,
-                                         multiplier: 1.0,
-                                         constant: buttonSize.height))
+        contentVerticalAlignment = UIControlContentVerticalAlignment.bottom
+        iv.centerHorizontallyInSuperview()
+        iv.alignWithSuperviewTop(constant: 5)
+        iv.setSize(buttonSize)
+        super.updateConstraints()
     }
 }
 

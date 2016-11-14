@@ -11,16 +11,16 @@
 		1360CF677EF9FBC0A875427669C40FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		3A0957F4DE9D2A69D85C392C88360E9B /* JBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AD7301FBA9EB7DF07F263D4A705E6 /* JBTabBarButton.swift */; };
 		4E72C57EBCEFDDD4312810684289C1EF /* JBScrollingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B64BB7ACA144CBB18ECC48D39B17B5 /* JBScrollingTabBarController.swift */; };
-		535EBA0A7896D0DB8BD7336D6F25D4CB /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43EF7D6A1157E1902B20EEE5E5347BE /* UIFont.swift */; };
-		54CE87350F55120033EC2B04C038B12D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D305351FE3728BD096BBA34F8C368 /* UIColor.swift */; };
-		5876ABCE7A691CC047D666A163293573 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA235E68F90A94E714D9AF8B7B72E8 /* UIView.swift */; };
 		5AF219D4A709F205E58D932DBE2A7C5C /* Pods-JBScrollingTabBarController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2231F07D4EF3C6463705568CC08254C6 /* Pods-JBScrollingTabBarController_Example-dummy.m */; };
 		5AFEB9B00B78AE0605DA98990006EEA2 /* Pods-JBScrollingTabBarController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB484C5D9A12EBE625E3ECD5DBD32CE /* Pods-JBScrollingTabBarController_Tests-dummy.m */; };
 		5E729F359FE6EFAB4D3BE213F3CA10FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		A2C6430707E5C659BDAFF734A7C0C6D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A93420501DD97A840064C44F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934204F1DD97A840064C44F /* UIView.swift */; };
+		A93420521DD97A9C0064C44F /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93420511DD97A9C0064C44F /* UIFont.swift */; };
+		A93420541DD97AB90064C44F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93420531DD97AB90064C44F /* UIColor.swift */; };
+		A93420561DD97AC80064C44F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93420551DD97AC80064C44F /* UIImageView.swift */; };
 		AEC0F6649E36E516C84477852A66C348 /* JBScrollingTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C8889368FC82756DBD66F4AD7A7AB /* JBScrollingTabBarController-dummy.m */; };
 		C1A907C85810D4CDDFA805B913A07974 /* Pods-JBScrollingTabBarController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CA314A6FE13ADCCC70EFCAE2685A3D /* Pods-JBScrollingTabBarController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE1015BB4BB0E24060C067D2C1B7049B /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6775C19571312C8FD1387405DF9DF6 /* UIImageView.swift */; };
 		DF918BB2737D7E05FD2F90EE9B83BBF2 /* JBScrollingTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF928099059D69B773FE7ACFCA67F2A /* JBScrollingTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,32 +35,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FC01C7F8CF0731A3F70D3F63FD2BD92 /* Pods_JBScrollingTabBarController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JBScrollingTabBarController_Tests.framework; path = "Pods-JBScrollingTabBarController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FC01C7F8CF0731A3F70D3F63FD2BD92 /* Pods_JBScrollingTabBarController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBScrollingTabBarController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6386EA423C5BE0899D2C9A0FB8851E /* Pods-JBScrollingTabBarController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBScrollingTabBarController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1C1AD7301FBA9EB7DF07F263D4A705E6 /* JBTabBarButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JBTabBarButton.swift; sourceTree = "<group>"; };
 		2231F07D4EF3C6463705568CC08254C6 /* Pods-JBScrollingTabBarController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JBScrollingTabBarController_Example-dummy.m"; sourceTree = "<group>"; };
 		3B939B39DA2253BDE026A661245391D3 /* Pods-JBScrollingTabBarController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JBScrollingTabBarController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3EB484C5D9A12EBE625E3ECD5DBD32CE /* Pods-JBScrollingTabBarController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JBScrollingTabBarController_Tests-dummy.m"; sourceTree = "<group>"; };
-		43BA235E68F90A94E714D9AF8B7B72E8 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		467C8889368FC82756DBD66F4AD7A7AB /* JBScrollingTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JBScrollingTabBarController-dummy.m"; sourceTree = "<group>"; };
 		46B64BB7ACA144CBB18ECC48D39B17B5 /* JBScrollingTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JBScrollingTabBarController.swift; sourceTree = "<group>"; };
 		4EC727880283E6EC0953D9F40542F6CD /* Pods-JBScrollingTabBarController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBScrollingTabBarController_Example-resources.sh"; sourceTree = "<group>"; };
 		65F4DBE380CAD6B2AE48F9B9B7AD40E6 /* Pods-JBScrollingTabBarController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBScrollingTabBarController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6F52CC8F4D13B9157B828477D53E92A8 /* JBScrollingTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JBScrollingTabBarController.modulemap; sourceTree = "<group>"; };
-		805B934BAC16B8F63A405F32CD9A2BC1 /* Pods-JBScrollingTabBarController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JBScrollingTabBarController_Example.modulemap"; sourceTree = "<group>"; };
+		6F52CC8F4D13B9157B828477D53E92A8 /* JBScrollingTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JBScrollingTabBarController.modulemap; sourceTree = "<group>"; };
+		805B934BAC16B8F63A405F32CD9A2BC1 /* Pods-JBScrollingTabBarController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JBScrollingTabBarController_Example.modulemap"; sourceTree = "<group>"; };
 		88D753358FCD3B5609B5A9CC389DAED3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C556797F1C78EAEE57E45CB71E692F3 /* Pods-JBScrollingTabBarController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBScrollingTabBarController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		922D015677308FF9B90F38FCA8CAF573 /* Pods-JBScrollingTabBarController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBScrollingTabBarController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A04214FDB5B07E7C72256C767E72B5E2 /* Pods-JBScrollingTabBarController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JBScrollingTabBarController_Tests.modulemap"; sourceTree = "<group>"; };
-		A43EF7D6A1157E1902B20EEE5E5347BE /* UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		AE6775C19571312C8FD1387405DF9DF6 /* UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A04214FDB5B07E7C72256C767E72B5E2 /* Pods-JBScrollingTabBarController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JBScrollingTabBarController_Tests.modulemap"; sourceTree = "<group>"; };
+		A934204F1DD97A840064C44F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A93420511DD97A9C0064C44F /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		A93420531DD97AB90064C44F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A93420551DD97AC80064C44F /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		AFFBDE014683ECA175539B764DCA7D24 /* Pods-JBScrollingTabBarController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBScrollingTabBarController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B35417BFDDF684200BF24F547FBDCF12 /* Pods-JBScrollingTabBarController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JBScrollingTabBarController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B442D8D048D1DBA98D7A121F8D4A09BF /* Pods-JBScrollingTabBarController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JBScrollingTabBarController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B55D305351FE3728BD096BBA34F8C368 /* UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B6CBB147236CD974865E3EBF62AD23EC /* Pods-JBScrollingTabBarController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JBScrollingTabBarController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BC9372C9E73EC0F515EE1DE86A36B575 /* JBScrollingTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JBScrollingTabBarController.framework; path = JBScrollingTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9372C9E73EC0F515EE1DE86A36B575 /* JBScrollingTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JBScrollingTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CA314A6FE13ADCCC70EFCAE2685A3D /* Pods-JBScrollingTabBarController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JBScrollingTabBarController_Example-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DBA6FE9990EDFBE5DAED405C3335EE37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		DDBACCB06153009A4FC645F42E93EEA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF1B5F81FAA23EF784D804D2DDEBC50D /* Pods-JBScrollingTabBarController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBScrollingTabBarController_Tests-resources.sh"; sourceTree = "<group>"; };
 		E53F421E9DB73EE9036CCD2C693FD669 /* JBScrollingTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JBScrollingTabBarController-prefix.pch"; sourceTree = "<group>"; };
-		E6C72B3AFF85CC53D10EFC9530887E1B /* Pods_JBScrollingTabBarController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JBScrollingTabBarController_Example.framework; path = "Pods-JBScrollingTabBarController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C72B3AFF85CC53D10EFC9530887E1B /* Pods_JBScrollingTabBarController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBScrollingTabBarController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7B9C5B7FAA9C498DEE80E8A7EB3365 /* Pods-JBScrollingTabBarController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JBScrollingTabBarController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F2DF5638268F25DCAC2A461E8133AF28 /* Pods-JBScrollingTabBarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBScrollingTabBarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F3E83E41823FF35E8690FA70D3A9305E /* JBScrollingTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JBScrollingTabBarController.xcconfig; sourceTree = "<group>"; };
@@ -171,17 +171,23 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		A934204E1DD97A7E0064C44F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A934204F1DD97A840064C44F /* UIView.swift */,
+				A93420511DD97A9C0064C44F /* UIFont.swift */,
+				A93420531DD97AB90064C44F /* UIColor.swift */,
+				A93420551DD97AC80064C44F /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AE9D36D192B50B33DA8C04AFDAB8D2B4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				46B64BB7ACA144CBB18ECC48D39B17B5 /* JBScrollingTabBarController.swift */,
 				1C1AD7301FBA9EB7DF07F263D4A705E6 /* JBTabBarButton.swift */,
-				B55D305351FE3728BD096BBA34F8C368 /* UIColor.swift */,
-				A43EF7D6A1157E1902B20EEE5E5347BE /* UIFont.swift */,
-				AE6775C19571312C8FD1387405DF9DF6 /* UIImageView.swift */,
-				43BA235E68F90A94E714D9AF8B7B72E8 /* UIView.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -215,9 +221,9 @@
 		EF0493DA299BBDFCE2682C6513FAB7E3 /* JBScrollingTabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				A934204E1DD97A7E0064C44F /* Extensions */,
 				AE9D36D192B50B33DA8C04AFDAB8D2B4 /* Classes */,
 			);
-			name = JBScrollingTabBarController;
 			path = JBScrollingTabBarController;
 			sourceTree = "<group>";
 		};
@@ -370,13 +376,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93420501DD97A840064C44F /* UIView.swift in Sources */,
 				AEC0F6649E36E516C84477852A66C348 /* JBScrollingTabBarController-dummy.m in Sources */,
 				4E72C57EBCEFDDD4312810684289C1EF /* JBScrollingTabBarController.swift in Sources */,
 				3A0957F4DE9D2A69D85C392C88360E9B /* JBTabBarButton.swift in Sources */,
-				54CE87350F55120033EC2B04C038B12D /* UIColor.swift in Sources */,
-				535EBA0A7896D0DB8BD7336D6F25D4CB /* UIFont.swift in Sources */,
-				CE1015BB4BB0E24060C067D2C1B7049B /* UIImageView.swift in Sources */,
-				5876ABCE7A691CC047D666A163293573 /* UIView.swift in Sources */,
+				A93420561DD97AC80064C44F /* UIImageView.swift in Sources */,
+				A93420521DD97A9C0064C44F /* UIFont.swift in Sources */,
+				A93420541DD97AB90064C44F /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
