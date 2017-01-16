@@ -5,8 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/JBScrollingTabBarController.svg?style=flat)](http://cocoapods.org/pods/JBScrollingTabBarController)
 
-![](http://i.giphy.com/1100I6bT8lHx9m.gif)
-
 **JBScrollingTabBarController** is a scrollable and customizable UITabBarController subclass that allows the user to display more than 5 TabBarItems without showing a More navigation interface.
 
 ## Requirements
@@ -112,7 +110,7 @@ var selectedViewController: UIViewController?
 
 ## Author
 
-Jeff Breunig, jkbreunig@gmail.com
+Jeff Breunig
 
 ## License
 
